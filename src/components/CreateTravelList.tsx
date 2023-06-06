@@ -43,11 +43,13 @@ interface FormData {
 
 function CreateTravelList() {
 
-    const { register, handleSubmit, formState:{errors} } = useForm<FormData>();
+    const { register, handleSubmit, formState:{errors}, reset } = useForm<FormData>();
     const [travelList, setTravelList] = useRecoilState(TravelListState);
 
     const onValid = ({country}: FormData) => {
         setTravelList((prev: any) => [{country:country, category: "WISH", id:country}, ...prev])
+        console.log(reset())
+
     }
 
     useEffect(() => {
