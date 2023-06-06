@@ -34,7 +34,9 @@ const Btn = styled.button`
     position: fixed;
     top: 10px;
     right: 10px;
-    
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
 `
 
 const Category = styled.div`
@@ -64,7 +66,7 @@ function TravelList(){
                     <HeaderBar>
                         <HeaderDiv>
                             <h1> Travel List </h1>
-                            <Btn onClick={toggleDarkAtom}>Toggle Dark Mode</Btn>
+                            <Btn onClick={toggleDarkAtom}>{isDark ? <span role="img" aria-label="light">☀️</span> : <span role="img" aria-label="dark">🌑</span>}</Btn>
                         </HeaderDiv>
                         <CreateTravelList />
                         <TravelListDiv>
