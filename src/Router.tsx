@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
-import NotFound from "./Error/NotFound";
-import TravelList from "./components/TravelList";
-
+import Home from "./components/Home";
 
 const router = createBrowserRouter([
     {
@@ -11,10 +9,9 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <TravelList />
+                element: <Home />
             },
         ],
-        errorElement: <NotFound />
     }
 ])
 

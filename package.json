@@ -1,22 +1,26 @@
 {
-  "name": "react-master-vite",
+  "name": "react-master-17",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 4000",
+    "dev": "vite --host 0.0.0.0 --port 4003",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@bradgarropy/use-countdown": "^1.5.2",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.44.3",
     "react-query": "^3.39.3",
     "react-router-dom": "6.4",
     "recoil": "^0.7.7",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.3.11",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
