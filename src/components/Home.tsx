@@ -3,7 +3,6 @@ import { AnimatePresence, motion, useAnimationControls } from "framer-motion"
 import { useEffect, useState } from "react";
 import CountDown from "../Time/countdown";
 import Confetti from "react-confetti";
-import swal from "sweetalert";
 
 const CountDownContainer = styled(motion.div)`
   background: #313A3A;
@@ -13,6 +12,7 @@ const CountDownContainer = styled(motion.div)`
   height: 100%;
 `
 
+
 const CountDownDiv = styled.div`
   width: 60%;
   height: 100%;
@@ -20,6 +20,7 @@ const CountDownDiv = styled.div`
   top: 0%;
   left: 20%;
   display: grid;
+
   grid-template-columns: 1fr 5px 1fr;
   justify-items: center;
   align-items: center;
